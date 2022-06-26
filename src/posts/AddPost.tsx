@@ -25,18 +25,18 @@ const AddPost = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <input
-          className="p-4 rounded-md text-xl"
+          className="p-4 rounded-md text-xl outline outline-1"
           placeholder="Title"
           {...register("title", { required: true })}
         />
         <input
-          className="p-4 rounded-md text-xl"
+          className="p-4 rounded-md text-xl outline outline-1"
           placeholder="User Id"
           type='number'
           {...register("userId", { required: true })}
         />
         <textarea
-          className="p-4 rounded-md text-xl"
+          className="p-4 rounded-md text-xl outline outline-1"
           placeholder="Body"
           {...register("body", { required: true })}
         />
@@ -50,7 +50,7 @@ const AddPost = () => {
         />
       </form>
       <button
-        className="p-4 mt-4 cursor-pointer ring ring-blue-400 w-full hover:bg-blue-400 text-xl text-white rounded-md"
+        className="p-4 mt-4 cursor-pointer ring ring-blue-400 w-full hover:bg-blue-400 text-xl text-blue-400 hover:text-white rounded-md"
         onClick={() => navigate("/")}
       >
         Go Home
